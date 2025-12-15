@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "1b5a86fb-d7a1-4e1b-9828-ba45f44ef940",
+		"name": "DWES03 - API Camisetas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50139760",
+		"_collection_link": "https://assoto-1290397.postman.co/workspace/API-Asier~087897db-7c6b-4f9b-896d-1e6191b933b3/collection/50139760-1b5a86fb-d7a1-4e1b-9828-ba45f44ef940?action=share&source=collection_link&creator=50139760"
+	},
+	"item": [
+		{
+			"name": "GET - Todas las camisetas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/public/camisetas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"public",
+						"camisetas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Camiseta por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/public/camisetas/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"public",
+						"camisetas",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST - Crear camiseta",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"equipo\": \"Valencia\",\r\n  \"temporada\": \"23/24\",\r\n  \"talla\": \"L\",\r\n  \"precio_compra\": \"16.00\",\r\n  \"precio_venta\": \"27.00\",\r\n  \"estado\": \"en_stock\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/public/camisetas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"public",
+						"camisetas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT - Actualizar camiseta",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"equipo\": \"Valencia\",\r\n  \"temporada\": \"23/24\",\r\n  \"talla\": \"L\",\r\n  \"precio_compra\": \"16.00\",\r\n  \"precio_venta\": \"27.00\",\r\n  \"estado\": \"en_stock\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/public/camisetas/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"public",
+						"camisetas",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE - Borrar camiseta",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/public/camisetas/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"public",
+						"camisetas",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

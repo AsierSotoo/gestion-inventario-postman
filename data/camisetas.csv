@@ -1,0 +1,6 @@
+id;equipo;temporada;talla;precio_compra;precio_venta;estado;fecha_alta
+1;Osasuna;24/25;M;15.00;25.00;en_stock;2025-11-01
+2;"Real Sociedad";23/24;L;18.00;30.00;vendida;2025-10-15
+3;Barcelona;22/23;S;20.00;35.00;en_stock;2025-09-10
+4;"Real Madrid";24/25;XL;22.00;40.00;reservada;2025-11-05
+5;"Athletic Club";23/24;M;17.00;28.00;en_stock;2025-08-20
